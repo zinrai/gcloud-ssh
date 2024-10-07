@@ -1,0 +1,19 @@
+defaults:
+  host: bastion
+  zone: asia-northeast1-c
+  user: zinrai
+  socks_port: 11090
+
+environments:
+  dev01:
+    project: dev-00001
+    socks_port: 10001
+  stg01:
+    project: stg-00001
+    host: bastion-stg
+    socks_port: 10002
+  prod01:
+    project: prod-00001
+    zone: asia-northeast1-b
+    user: prod-user
+    socks_port: 10003
