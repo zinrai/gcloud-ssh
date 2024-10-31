@@ -77,7 +77,7 @@ func main() {
 	}
 
 	if *useSocks {
-		args = append(args, "--", "-N", "-p", "22", "-D", fmt.Sprintf("localhost:%d", env.SocksPort))
+		args = append(args, "--", "-p", "22", "-D", fmt.Sprintf("localhost:%d", env.SocksPort))
 	}
 
 	cmd := exec.Command("gcloud", args...)
